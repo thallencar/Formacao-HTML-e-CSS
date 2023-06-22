@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;400&family=Raleway:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@500;600;700&display=swap');
 
 * {
   margin: 0;
@@ -16,12 +16,21 @@ body {
   Transform: translate(-50%, -50%);*/
 }
 
+:root{
+  --destaque: #0011A9;
+  --texto: #F6F6F6;
+  --footer: #000000;
+
+  --tex:'Montserrat', sans-serif;
+  --titulo: 'Krona One', sans-serif;
+}
+
 .titulo-destaque {
-  color: #0f768d;
+  color: var(--destaque);
 }
 
 .apresentacao {
-  margin: 10% 15%;
+  margin: 10% 8%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -32,20 +41,22 @@ body {
   width: 615px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 30px;
 }
 
 .apresentacao__conteudo__titulo {
-  font-size: 40px;
-  font-family: 'Raleway', sans-serif;
+  font-size: 36px;
+  font-family: var(--titulo);
   text-align: left;
+  width: 593px;
 }
 
 .apresentacao__conteudo__texto{
   font-size: 24px;
   letter-spacing: 1px;
   text-align: justify;
-  font-family: 'Montserrat Alternates', sans-serif;
+  font-family: var(--tex);
+  font-weight: 500;
 }
 
 .apresentacao__links{
@@ -57,27 +68,30 @@ body {
 }
 
 .apresentacao__links__subtitulo{
-  font-family: 'Raleway', sans-serif;
-  font-weight: 400;
-  font-size: 20px;
+  font-family: var(--titulo);
+  font-size: 24px;
+  font-weight:normal;
+  line-height: 40px;
 }
 
 .apresentacao__links__link{
   /*background-color: #0f768d; (or ctrl+lk+c)*/
   display: flex;
   justify-content: center;
-  gap: 16px;
-  border: 2px solid #0f768d;
+  align-items: center;
+  gap: 12px;
+  border: 3.5px solid var(--destaque);
   width: 378px;
-  text-align: center;
-  border-radius: 18px;
-  font-size: 20px;
-  font-weight: 600px;
+  border-radius: 8px;
+  font-size: 24px;
   text-decoration: none;
-  padding: 21.5px 0;
-  color: #ffffff;
-  font-family: 'Montserrat Alternates', sans-serif;
+  padding: 18.5px 0;
+  color: var(--texto);
+  font-family: var(--tex), sans-serif;
+  font-weight: 600;
 }
+
+
 
 /* #instagram:hover{
 background: linear-gradient(90deg, rgba(64,93,230,1) 0%, rgba(193,53,132,1) 50%, rgba(252,175,69,1) 100%);;
@@ -92,14 +106,6 @@ background: linear-gradient(90deg, rgba(64,93,230,1) 0%, rgba(193,53,132,1) 50%,
 .guita{
   box-shadow: 1px 1px 20px #0a4957;
 } */
-
-.guita > img{
-  height: 550px;
-}
-
-h1 {
-  font-weight: bold;
-}
 
 span {
   color: #0f768d;
