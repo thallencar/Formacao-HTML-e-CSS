@@ -5,6 +5,9 @@
   padding: 0;
 }
 
+::-webkit-scrollbar
+
+
 body {
   height: 100vh;
   box-sizing: border-box;
@@ -91,22 +94,13 @@ body {
   font-weight: 600;
 }
 
-
-
-/* #instagram:hover{
-background: linear-gradient(90deg, rgba(64,93,230,1) 0%, rgba(193,53,132,1) 50%, rgba(252,175,69,1) 100%);;
+.profile{
+  width: 70%;
+  height: 570px;
+  padding-left: 60px;
 }
-
 
 .apresentacao__links__link:hover{
-  background-color: #0f768dad;
-  transition: .5s;
-}
-
-.guita{
-  box-shadow: 1px 1px 20px #0a4957;
-} */
-
-span {
-  color: #0f768d;
+  background-color: #0011a952;
+  transition: .8s;
 }
