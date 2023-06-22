@@ -5,7 +5,14 @@
   padding: 0;
 }
 
-::-webkit-scrollbar
+::-webkit-scrollbar{
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+  background: linear-gradient(#0011A9, #0011a952);
+  border-radius: 10px;
+}
 
 
 body {
@@ -103,4 +110,16 @@ body {
 .apresentacao__links__link:hover{
   background-color: #0011a952;
   transition: .8s;
+}
+
+footer{
+  background: linear-gradient(#0011A9, #0011a9bb);
+  height: 65px;
+}
+
+.rodape{
+  color: var(--texto);
+  padding-top: 25px;
+  margin-left: 40%;
+  font-family: var(--tex);
 }
